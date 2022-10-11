@@ -39,7 +39,9 @@ for i in original_list:
 
 numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 
-
+new_list = []
+new_list = [x for x in numbers if x > 0]
+print(new_list)
 
 
 ## 2 create a list of integers which specify the length of each word in
@@ -57,22 +59,26 @@ words = sentence.split()
 dict={"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400, 
 "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
 
+new_dict = [i.upper() for i in dict if dict[i] < 5000]
+print(new_dict)
 
 
 
 ## Find all the numbers from 1 to 1000 that have a 4 in them
 
-
+new_range = [i for i in range(0,1000) if '3' in str(i)]
+print(new_range)
 
 ## count how many times the word 'the' appears in the text file - 'sometext.txt'
 
-
+#openfile = open('sometext.txt','r')
+#results = [i for i in openfile for 'sometext.txt'.counter('the')]
 
 ## Extract the numbers from the following phrase ##
 
-phrase = 'In 1984 there were 13 instances of a protest with over 1000 people attending. On average there were 15 reported injuries at each " +
-"event, with about 3 or 4 that were classifled as serious per event.'
-
+phrase = 'In 1984 there were 13 instances of a protest with over 1000 people attending. On average there were 15 reported injuries at each' + 'event, with about 3 or 4 that were classifled as serious per event.'
+numbers = [x for x in phrase if x.isdigit()]
+print(numbers)
 
 
 
