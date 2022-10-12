@@ -50,6 +50,8 @@ print(new_list)
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
 
+#count = [i for i in len(words) != 'the']
+#print(count)
 
 
 ## Given dictionary is consisted of vehicles and their weights in kilograms. 
